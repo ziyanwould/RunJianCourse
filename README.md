@@ -1,4 +1,7 @@
-# webpack4_pc_tool
+# 薪火微学院项目
+课程PC静态页面开发
+
+## webpack4_pc_tool
 webpack4搭建多页面多环境demo
 
 ## v 1.0.1 改动
