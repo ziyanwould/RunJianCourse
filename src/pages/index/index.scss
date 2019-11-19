@@ -75,10 +75,21 @@ header{
 }
 .headerRight{
     float: right;
+    li a{ font-size: 14px;}
+    position: relative;
+   
    @extend %commheaderList;
    li{
     padding-right: 40px;
-}
+    }
+    svg{
+        font-size: 22px;
+    }
+
+    img{
+        position: relative;
+        top: 11px;
+    }
 }
 
 
@@ -88,6 +99,18 @@ header{
     margin-top: 20px;
     font-size:14px;
     @extend %clearfix;    
+    
+}
+.menuLift,.menuRight{
+    position: relative;
+    float: left;
+}
+.menuLift{
+    width:185px;
+    height:364px;
+    padding: 18px 0;
+    background:rgba(43,51,59,1);
+    border-radius:10px 0px 0px 10px;
     li{
         @extend %clearfix;  
         width: 91px;
@@ -109,16 +132,6 @@ header{
     svg{
         color:rgba(255,255,255,1);
     }
-}
-.menuLift,.menuRight{
-    float: left;
-}
-.menuLift{
-    width:185px;
-    height:364px;
-    padding: 18px 0;
-    background:rgba(43,51,59,1);
-    border-radius:10px 0px 0px 10px;
     
 }
 
@@ -349,5 +362,180 @@ footer{
         font-family:PingFang SC;
         font-weight:500;
         color:rgba(159,167,171,1);
+    }
+}
+
+
+.suspension{
+    width: 60px;
+    height: 144px;
+    font-size: 23px;
+    position: absolute;
+    right: -90px;
+   
+    a{
+        text-decoration: none;
+        z-index: 10;
+        display: block;
+        width:60px;
+        height:48px;
+        border:1px solid rgba(45,210,193,1);
+        text-align: center;
+        color: rgba(45,210,193,1);
+        line-height: 48px;
+        &:hover{
+          background: rgba(45,210,193,1);
+          color: #FFFFFF;
+          transition: all .3s ease-in;
+       
+        }
+    }
+    li{
+        &:nth-of-type(3){
+            svg{
+               width: 20px; 
+               height: 11px;
+            }
+            a{
+                line-height: 24px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &:nth-of-type(2){
+            a{
+                border-top: none;
+                border-bottom: none;
+            }        
+        }
+        &:nth-of-type(1){
+           
+                position: relative;
+            
+            span{
+                position: absolute;
+                width:20px;
+                height:20px;
+                background:rgba(255,104,0,1);
+                border-radius:10px;
+
+                font-size:12px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+                text-align: center;
+                line-height: 20px;
+                left: 47px;
+                bottom: 35px;
+            }
+        }
+        
+    }
+    .active{
+        a{
+            background: rgba(45,210,193,1);
+            color: #FFFFFF;
+         
+        }
+    }
+}
+
+#suspension{
+    position:fixed;
+    width: 1100px;
+    height: 144px;
+    top: 469px;
+    left:50% ;
+    margin-left: -550px;
+    z-index: -1;
+}
+.secondMenu{
+    width:659px;
+    height:400px;
+    box-shadow:0px 1px 5px 0px rgba(193, 193, 193, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    a{
+        color:rgba(77,85,93,1);
+        text-decoration: none;
+        display: inline-block;
+        margin:0 20px;
+        line-height: 36px;
+        &:hover{
+        transition: all .3s ease-in;  
+        color:rgba(45,210,193,1);;
+        }
+    }
+    section{
+        margin-left: 26px;
+        margin-right: 35px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(234,234,234,1);
+    }
+    h3{
+        padding-left: 20px;
+        font-size:16px;
+        font-family:PingFang SC;
+        font-weight:bold;
+        color:rgba(22,22,22,1);
+        margin: 27px 0;
+    }
+    ul{
+        @extend %clearfix;    
+    }
+
+    li{
+        float: left;
+        
+    }
+    .active{
+        a{
+            color:rgba(45,210,193,1);
+        }
+    }
+}
+
+/**已登录样式*/
+.loggedIn{
+   li{
+    position: relative;
+   } 
+   .active:after{
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    background: #ff6800;
+    border-radius: 50%;
+    }
+}
+
+/**头像展开菜单*/
+.ExtendedMenus{
+    width:131px;
+    height:256px;
+    position:absolute;
+    right: 3px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 1px 5px 0px rgba(193, 193, 193, 0.35); 
+    a{
+        color:rgba(77,85,93,1);
+    }
+
+    dt,dd{
+        padding: 16.5px 0;
+        text-align: center;
+    }
+    dl{
+       padding-top: 8.5px;
+    }
+    dd{
+        border-top: 1px  solid rgba(241,241,241,1);
+        padding-top:25px ;
     }
 }

@@ -24,11 +24,54 @@
             </ul>
         </div>
         <div class="headerRight">
-            <ul>
+            <!-- 未登录时候 -->
+            <ul style="display: none;">
                 <li><a href="javascript:;">下载APP</a></li>
                 <li><a href="javascript:;">登录</a></li>
                 <li><a href="javascript:;">注册</a></li>
             </ul>
+
+            <!-- 登录后显示 -->
+            <ul class="loggedIn">
+                <li><a href="javascript:;">下载APP</a></li>
+                <li class="active">
+                    <a href="javascript:;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-gouwuche"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xiaoxi"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="javascript:;">学习中心</a></li>
+                <li><a href="javascript:;"><img src="../../assets/images/touxiang.png"></a></li>
+
+            </ul>
+
+            <!-- 菜单展开 -->
+
+            <dl class="ExtendedMenus">
+                <dt>
+                    <a href="javascript:;">我的收藏</a>
+                </dt>
+                <dt>
+                    <a href="javascript:;">我的足迹</a>
+                </dt>
+                <dt>
+                    <a href="javascript:;">帮助与反馈</a>
+                </dt>
+                <dt>
+                    <a href="javascript:;">设置</a>
+                </dt>
+                <dd>
+                    <a href="javascript:;">退出登录</a>
+                </dd>
+            </dl>
         </div>
     </header>
     <div class="menu">
@@ -58,6 +101,28 @@
             </ul>
         </div>
         <div class="menuRight">
+            <div class="secondMenu">
+                <section>
+                    <h3>铁塔代维</h3>
+                    <ul>
+                        <li class="active"><a href="javascript:;">动力配套</a></li>
+                        <li><a href="javascript:;">铁塔维护</a></li>
+                        <li><a href="javascript:;">动环监控</a></li>
+                        <li><a href="javascript:;">必备基础</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>移动代维</h3>
+                    <ul>
+                        <li><a href="javascript:;">基站设备及天馈</a></li>
+                        <li><a href="javascript:;">传输路线</a></li>
+                        <li><a href="javascript:;">集团客户</a></li>
+                        <li><a href="javascript:;">直放站室分及WLAN</a></li>
+                        <li><a href="javascript:;">行业基础</a></li>
+                        <li><a href="javascript:;">家庭客户</a></li>
+                    </ul>
+                </section>
+            </div>
             <img src="../../assets/images/banner.png">
         </div>
     </div>
@@ -102,80 +167,80 @@
     </ul>
 
     <div class="carte">
-            <h3>精选课程</h3>
-            <!-- <span class="fb">快速上岗上位</span> -->
-            <div class="more">
-                <a href="javascript:;" class="">查看更多<svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-gengduo"></use>
-                    </svg></a>
-            </div>
+        <h3>精选课程</h3>
+        <!-- <span class="fb">快速上岗上位</span> -->
+        <div class="more">
+            <a href="javascript:;" class="">查看更多<svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gengduo"></use>
+                </svg></a>
+        </div>
     </div>
 
     <ul class="course">
-      <li>
-          <a href="javascript:;" class="ms">
-              <div class="photo"><img src="../../assets/images/third1.png"></div>
-              <h4>React.js 框架从入门到精通</h4>
-              <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
-              <div class="other">
+        <li>
+            <a href="javascript:;" class="ms">
+                <div class="photo"><img src="../../assets/images/third1.png"></div>
+                <h4>React.js 框架从入门到精通</h4>
+                <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
+                <div class="other">
                     <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-wo"></use>
+                        <use xlink:href="#icon-wo"></use>
                     </svg>
                     <span class="people">1541 人学习</span>
                     <span class="number">13 节课-免费</span>
-              </div>
-              
-          </a>
-      </li>
-      <li>
+                </div>
+
+            </a>
+        </li>
+        <li>
             <a href="javascript:;" class="ms">
                 <div class="photo"><img src="../../assets/images/third2.png"></div>
                 <h4>React.js 框架从入门到精通</h4>
                 <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
                 <div class="other">
-                      <svg class="icon" aria-hidden="true">
-                              <use xlink:href="#icon-wo"></use>
-                      </svg>
-                      <span class="people">1541 人学习</span>
-                      <span class="number">13 节课-免费</span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wo"></use>
+                    </svg>
+                    <span class="people">1541 人学习</span>
+                    <span class="number">13 节课-免费</span>
                 </div>
-                
+
             </a>
         </li>
         <li>
-                <a href="javascript:;" class="ms">
-                    <div class="photo">
-                        <img src="../../assets/images/third3.png">
-                        <span class="new">新课</span>
-                        <span class="type">视频</span>
-                    </div>
-                    <h4>React.js 框架从入门到精通</h4>
-                    <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
-                    <div class="other">
-                          <svg class="icon" aria-hidden="true">
-                                  <use xlink:href="#icon-wo"></use>
-                          </svg>
-                          <span class="people">1541 人学习</span>
-                          <span class="number">13 节课-免费</span>
-                    </div>
-                    
-                </a>
-            </li>
-            <li>
-                    <a href="javascript:;" class="ms">
-                        <div class="photo"><img src="../../assets/images/third4.png"></div>
-                        <h4>React.js 框架从入门到精通</h4>
-                        <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
-                        <div class="other">
-                              <svg class="icon" aria-hidden="true">
-                                      <use xlink:href="#icon-wo"></use>
-                              </svg>
-                              <span class="people">1541 人学习</span>
-                              <span class="number">13 节课-免费</span>
-                        </div>
-                        
-                    </a>
-            </li>
+            <a href="javascript:;" class="ms">
+                <div class="photo">
+                    <img src="../../assets/images/third3.png">
+                    <span class="new">新课</span>
+                    <span class="type">视频</span>
+                </div>
+                <h4>React.js 框架从入门到精通</h4>
+                <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
+                <div class="other">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wo"></use>
+                    </svg>
+                    <span class="people">1541 人学习</span>
+                    <span class="number">13 节课-免费</span>
+                </div>
+
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="ms">
+                <div class="photo"><img src="../../assets/images/third4.png"></div>
+                <h4>React.js 框架从入门到精通</h4>
+                <p>从零起步玩转React.js，从基础到企业项目实战，直到源码全覆盖。</p>
+                <div class="other">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wo"></use>
+                    </svg>
+                    <span class="people">1541 人学习</span>
+                    <span class="number">13 节课-免费</span>
+                </div>
+
+            </a>
+        </li>
     </ul>
 
 
@@ -183,29 +248,57 @@
     <footer>
         <div class="footer">
             <div class="left">
-              <ul>
-                  <li><a href="javascript:;">关于我们</a></li>
-                  <li><a href="javascript:;">联系我们</a></li>
-                  <li><a href="javascript:;">帮助中心</a></li>
-              </ul>
-              <p>智慧培训平台，我的职业提升好帮手   © 2019 润建股份有限公司 版权所有</p>
+                <ul>
+                    <li><a href="javascript:;">关于我们</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                </ul>
+                <p>智慧培训平台，我的职业提升好帮手 © 2019 润建股份有限公司 版权所有</p>
             </div>
             <div class="right">
-               <a href="javascript:;"> 
-                   <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-ios"></use>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ios"></use>
                     </svg>
                     <span>App store下载</span>
                 </a>
-                <a href="javascript:;"> 
-                        <svg class="icon" aria-hidden="true">
-                         <use xlink:href="#icon-anzhuo"></use>
-                         </svg>
-                         <span>Android下载</span>
-                     </a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-anzhuo"></use>
+                    </svg>
+                    <span>Android下载</span>
+                </a>
             </div>
         </div>
     </footer>
+    <div id="suspension">
+        <ul class="suspension">
+            <li class="active">
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-gouwuche"></use>
+                    </svg>
+                </a>
+                <span>0</span>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiaoxi"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiangshang"></use>
+                    </svg>
+                    <p>置顶</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 </body>
 
 </html>
