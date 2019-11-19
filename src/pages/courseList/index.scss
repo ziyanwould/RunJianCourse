@@ -1,0 +1,372 @@
+@import '../../assets/css/reset';
+
+$box-shadow-color: rgba(172, 172, 172, 0.35);
+%clearfix {
+    *zoom: 1;
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  } ;
+  %commheaderList{
+    ul{
+        @extend %clearfix;     
+    }
+    li{
+        float: left; 
+        a{
+            font-size:14px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            opacity:0.6;
+            line-height:48px;
+        }
+    
+       
+    }
+  }
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+header{
+    font-size: 12px;
+    width:100%;
+    height:48px;
+    background:rgba(7,17,27,1);
+    a{ text-decoration:none} 
+}
+.headerLeft{
+    float: left;
+    @extend %clearfix;
+    .logo{
+        display: block;
+        margin-left: 20px;
+        margin-top: 22px;
+        img{
+            width:154px;
+            height:57px;
+        }
+    }
+    .logo,ul{
+        float: left;
+    }
+    ul{
+        @extend %clearfix;     
+    }
+    @extend %commheaderList;
+    li{
+        padding-right: 40px;
+    }
+    input{
+        width:300px;
+        height:30px;
+        background:rgba(244,244,244,1);
+        border-radius:15px;
+        margin-top: 35px;
+    }
+}
+.headerRight{
+    float: right;
+    li a{ font-size: 14px;}
+    position: relative;
+   
+   @extend %commheaderList;
+   li{
+    padding-right: 21px;
+    }
+    svg{
+        font-size: 22px;
+    }
+
+    img{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        top: 11px;
+    }
+}
+.header{
+    width: 1100px;
+    margin: 0 auto;
+}
+footer{
+    width: 100%;
+    margin-top: 127px;
+    height:141px;
+    background:rgba(248,250,252,1);
+}
+.footer{
+    width: 1100px;
+    margin: 0 auto;  
+    font-size: 14px;
+    a{
+        text-decoration: none;
+    }
+    @extend %clearfix;
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+        a{
+            display: inline-block;
+            width:150px;
+            height:35px;
+            background:rgba(200,206,212,1);
+            box-shadow:0px 1px 3px 0px rgba(96, 96, 96, 0.35);
+            border-radius:18px;
+            margin-left: 36px;
+            text-align: center;
+            line-height: 35px;
+            color: #FFFFFF;
+            margin-top: 65px;
+        }
+    }
+    ul{
+        @extend %clearfix;  
+        margin-top: 44px;
+       
+    }
+    li{
+        float: left;
+        a{
+            display: block;
+            font-size:14px;
+            font-family:PingFang SC;
+            font-weight:500;
+            color:rgba(159,167,171,1);
+        }
+        margin-right: 35px;
+        margin-bottom: 26px;
+    } 
+    p{
+        font-size:14px;
+        font-family:PingFang SC;
+        font-weight:500;
+        color:rgba(159,167,171,1);
+    }
+}
+.course{
+    width: 1134px;
+    margin: 0 auto; 
+    @extend %clearfix;
+    li{
+        float: left;
+        margin: 32px 16.67px;
+    }
+    a{
+        display: block;
+        text-decoration: none; 
+        font-size: 14px;
+
+        width:250px;
+        
+    }
+    .photo{
+        position: relative;
+        width:250px;
+        height:140px;
+        overflow: hidden;
+        background:linear-gradient(-60deg,rgba(56,103,253,1),rgba(44,76,255,1));
+        border-radius:10px;
+       
+        img{
+            width:250px;
+            height:140px;
+            transition: all 0.6s;
+            &:hover{
+                transform: scale(1.2); /* 放大1.2倍 */
+           }
+        }
+      
+    }
+
+    .new{
+
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 45px;
+       height: 30px;
+       line-height: 30px;
+       text-align: center;
+       color: #FFFFFF;
+       background: url('../../assets/images/iconCourse.png') no-repeat center center;
+    }
+    .type{
+        position: absolute;
+        bottom: 13px;
+        left: 17px;
+        width:40px;
+        height:25px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background:rgba(0,0,0,1);
+        opacity:0.5;
+        border-radius:5px;
+    }
+    h4{
+        overflow: hidden;/*超出部分隐藏*/
+        text-overflow:ellipsis;/* 超出部分显示省略号 */
+        white-space: nowrap;/*规定段落中的文本不进行换行 */
+        width: 250px;/*需要配合宽度来使用*/
+        height:18px;
+        font-size:16px;
+        font-family:PingFang SC;
+        font-weight:bold;
+        color:rgba(18,18,18,1);
+        margin: 15px 0 14px 0;
+    }
+
+    p{
+        width:247px;
+        height:35px;
+        font-size:14px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(77,85,93,1);
+        line-height:20px;
+        height: 35PX;
+        display: -webkit-box;
+    　　-webkit-box-orient: vertical;
+    　　-webkit-line-clamp: 2;
+    　　overflow: hidden;
+    }
+    .other{
+        margin-top: 27px;
+        font-size:14px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(113,113,113,1);
+    }
+}
+/**头像展开菜单*/
+.ExtendedMenus{
+    width:131px;
+    height:256px;
+    position:absolute;
+    right: 3px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 1px 5px 0px rgba(193, 193, 193, 0.35); 
+    a{
+        color:rgba(77,85,93,1);
+    }
+
+    dt,dd{
+        padding: 16.5px 0;
+        text-align: center;
+    }
+    dl{
+       padding-top: 8.5px;
+    }
+    dd{
+        border-top: 1px  solid rgba(241,241,241,1);
+        padding-top:25px ;
+    }
+}
+
+/**搜索*/
+.search{
+    width:1100px;
+    height:100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background:url('../../assets/images/CourseBanner.png');
+    border-radius:10px;
+    section{
+        position: relative;
+        top: -35px;
+    }
+    input{
+        width:400px;
+        height:40px;
+        background:rgba(255,255,255,1);
+        border-radius:5px;
+        margin-left: 648px;
+        margin-top: 30px;
+        &::-webkit-input-placeholder {
+            color: #606060;
+            padding-left: 15px;
+        }
+        &:-moz-placeholder {
+            color: #606060;
+            padding-left: 15px;
+        }
+        &:-ms-input-placeholder {
+            color: #606060;
+            padding-left: 15px;
+        }
+      
+    }
+    svg{
+        position: absolute;
+        top:75px;
+        right: 65px;
+        font-size: 21px;
+        color: #7C7C7C;
+    }
+}
+
+/**菜单*/
+.menu{
+   
+    font-size: 14px;
+    width:100%;
+    box-shadow:0px 10px 10px -10px rgba(213, 213, 213, 0.35);
+ 
+   dl{
+       width: 1100px;
+       margin: 0 auto;
+       @extend %clearfix;
+       border-bottom: 1px solid rgba(242,242,242,1);
+       &:last-of-type{
+           border: none;
+       }
+       dt,dd{
+           float: left;
+       }
+       dd{
+           width: 54px;
+           font-size:14px;
+            font-family:PingFang SC;
+            font-weight:bold;
+            color:rgba(18,18,18,1);
+            padding:9px 0;
+            margin: 20px 0;
+        }
+        dt{
+            width: 1046px;
+        }
+        a{
+            text-decoration: none;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(18,18,18,1);
+            display: inline-block;
+            padding:9px 8px ;
+            margin: 20px 36px 20px 0;
+            border-radius:5px;
+            transition: all .3s ease-in;
+            &:hover{
+            background:rgba(45,210,193,.1);
+            color:rgba(45,210,193,1);;
+          
+            }
+
+        }
+        .active{
+            background:rgba(45,210,193,.1);
+            color:rgba(45,210,193,1);;
+            border-radius:5px;
+        }
+   }
+}
