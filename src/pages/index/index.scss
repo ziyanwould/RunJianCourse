@@ -64,6 +64,14 @@ header{
     @extend %commheaderList;
     li{
         padding-left: 40px;
+        &:last-of-type{
+          position: relative;
+          svg{
+              position:absolute;
+              right: 20px;
+              top: 45px;
+          }
+        }
     }
     input{
         width:300px;
